@@ -1,13 +1,13 @@
 # abcde
 
-Ein Spiel mit Vue 3 + Vite.
+Ein Spiel mit Vue 3, Vite, TypeScript und three.js.
 
 ## Entwicklung
 
 ```sh
 npm install
 npm run dev      # Dev-Server
-npm run build    # Produktions-Build nach dist/
+npm run build    # Typecheck + Produktions-Build nach dist/
 npm run preview  # Build lokal ansehen
 ```
 

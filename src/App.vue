@@ -1,19 +1,22 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
+import GameCanvas from './components/GameCanvas.vue'
 
 const score = ref(0)
 </script>
 
 <template>
+  <GameCanvas />
   <main class="hello">
     <h1>Hello World 👋</h1>
-    <p>Vue 3 + Vite läuft. Hier entsteht ein Spiel.</p>
+    <p>Vue 3 + Vite + TypeScript + three.js läuft. Hier entsteht ein Spiel.</p>
     <button type="button" @click="score++">Punkte: {{ score }}</button>
   </main>
 </template>
 
 <style scoped>
 .hello {
+  position: relative;
   text-align: center;
   padding: 2rem;
 }
